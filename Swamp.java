@@ -1,11 +1,8 @@
 import java.io.*;
 import java.util.*;
-
-// DO NOT!! IMPORT JAVA.LANG
-
 public class Swamp
 {
-	static int[][] swamp;  // NOW YOU DON'T HAVE PASS THE REF IN/OUT METHODS
+	static int[][] swamp; 
 
  	public static void main(String[] args) throws Exception
 	{
@@ -16,8 +13,6 @@ public class Swamp
 		dfs( row, col, path );
 	} // END MAIN
 
- 	// JUST FOR YOUR DEBUGGING - DELETE THIS METHOD AND ITS CALL BEFORE HANDIN
-	// ----------------------------------------------------------------
 	private static void printSwamp(String label, int[][] swamp )
 	{
 		System.out.println( label );
@@ -40,8 +35,6 @@ public class Swamp
 			System.out.print("- ");
 		System.out.print( "\n");
 	}
-	// --YOU-- WRITE THIS METHOD (LOOK AT PRINTSWAMP FOR CLUES)
-   	// ----------------------------------------------------------------
 	private static int[][] loadSwamp( String infileName, int[] dropInPt  ) throws Exception
 	{
 		Scanner sc=new Scanner(new File(infileName));
